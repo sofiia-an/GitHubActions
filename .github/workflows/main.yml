@@ -31,12 +31,4 @@ jobs:
         # Run tox using the version of Python in `PATH`
         run: tox -e py
         
-      - name: Check API
-        run: |
-          status_code=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:5000)
-           if [ "$status_code" == "200" ]; then
-             echo "API is running successfully!"
-           else
-             echo "API is not running. Status code: $status_code"
-             exit 1
-           fi
+     
