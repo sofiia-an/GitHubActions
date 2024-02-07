@@ -17,10 +17,8 @@ jobs:
         uses: actions/setup-python@v3
 
       - name: Install Python dependencies
-        uses: py-actions/py-dependency-install@v4
-        with:
-          path: "./requirements.txt"
-          
+        run: python pip install -r requirements.txt
+        
       - name: Run db.py script
         run: python db.py --print_all_data
 
