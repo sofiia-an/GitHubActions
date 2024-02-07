@@ -15,12 +15,12 @@ jobs:
     steps:
       - name: Set up Python
         uses: actions/setup-python@v3
+
+      - name: Install Python dependencies
+        uses: py-actions/py-dependency-install@v4
         with:
-          python-version: 3.13.0-alpha.3
-
-      - name: Install dependencies
-        run: pip install -r ./requirements.txt
-
+          path: "./requirements.txt"
+          
       - name: Run db.py script
         run: python db.py --print_all_data
 
