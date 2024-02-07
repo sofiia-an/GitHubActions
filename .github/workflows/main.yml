@@ -26,7 +26,7 @@ jobs:
         run: python db.py --print_all_data
 
       - name: Run unit tests
-        run: python -m pytest --import-mode=append tests/
+        run: python -m unittest
         
       - name: Check API
         run: |
