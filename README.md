@@ -1,4 +1,5 @@
 [![CI Github Actions Python App](https://github.com/sofiia-an/GitHubActions/actions/workflows/main.yml/badge.svg)](https://github.com/sofiia-an/GitHubActions/actions/workflows/main.yml)
+
 # Flask Product API
 
 This is a simple Flask API for managing product data. The API allows you to perform basic CRUD (Create, Read, Update, Delete) operations on products.
