@@ -19,7 +19,7 @@ jobs:
           python-version: 3.13.0-alpha.3
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r ./requirements.txt
 
       - name: Run db.py script
         run: python db.py --print_all_data
