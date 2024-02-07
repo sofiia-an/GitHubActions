@@ -26,9 +26,8 @@ jobs:
         run: python db.py --print_all_data
 
       - name: Run unit tests
-        run: |
-          python -m unittest discover tests     
-     
+        run: python -m pytest --import-mode=append tests/
+        
       - name: Check API
         run: |
           status_code=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:5000)
